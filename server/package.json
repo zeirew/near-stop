@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "@types/node": "20.8.2",
+    "gts": "^5.2.0",
+    "typescript": "~5.2.0"
+  },
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint",
+    "dev": "nodemon build/server.js",
+    "start-dev": "node build/server.js"
+  },
+  "dependencies": {
+    "errorhandler": "^1.5.1"
+  }
+}
